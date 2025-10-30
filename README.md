@@ -1,66 +1,97 @@
-## Foundry
+# 🦄 Uniswap v4 Hook Incubator — Atrium Academy
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Built with Foundry](https://img.shields.io/badge/Built%20with-Foundry-orange.svg)](https://book.getfoundry.sh/)
+[![Solidity](https://img.shields.io/badge/Solidity-%5E0.8.25-lightgrey)](https://soliditylang.org/)
+[![Atrium Academy](https://img.shields.io/badge/Atrium-Academy-6E56CF)](https://atrium.academy/uniswap)
 
-Foundry consists of:
+This repository contains all of my research, experiments, and projects from **The Atrium Academy’s Uniswap v4 Hook Incubator** — a deep technical program focused on mastering Uniswap v4 Core and building advanced **Hooks** in Solidity.
 
-- **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
-- **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
-- **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
-- **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+---
 
-## Documentation
+## 📘 Overview
 
-https://book.getfoundry.sh/
+**Uniswap v4 Hooks** introduce programmable logic that extends AMM behavior — allowing developers to modify pool creation, swaps, and liquidity operations in new ways.  
 
-## Usage
+This repo serves as both a **technical archive** and **project portfolio**, mapping my progress through the incubator’s curriculum and culminating in my **capstone project**.
 
-### Build
+---
 
-```shell
-$ forge build
-```
+## 🧠 Repository Structure
 
-### Test
+`/research/` → Notes, curriculum reflections, mechanism design drafts
 
-```shell
-$ forge test
-```
+`/hooks/` → Hook implementations (Solidity + optional Rust/Stylus)
 
-### Format
+`/tests/` → Foundry test suites, simulations, fuzzing
 
-```shell
-$ forge fmt
-```
+`/deploy/` → Deployment scripts and configuration (Hardhat/Foundry)
 
-### Gas Snapshots
+`/docs/` → Technical writeups, diagrams, and project documentation
 
-```shell
-$ forge snapshot
-```
+---
 
-### Anvil
+## 🎓 Curriculum Mapping
 
-```shell
-$ anvil
-```
+| Week      | Topic                           | Description                                            | My Work                           |
+| --------- | ------------------------------- | ------------------------------------------------------ | --------------------------------- |
+| Week 1    | Introduction to Uniswap v4      | Architecture, singleton pool manager, what hooks solve | `/research/week1_introduction.md` |
+| Week 2    | Liquidity Operators             | LP automation, order-book logic, pool rebalancing      | `/hooks/liquidity_operator_hook/` |
+| Weeks 3–4 | Dynamic Fees                    | Volatility-based and adaptive fee models               | `/hooks/volatility_fee_hook/`     |
+| Week 5    | Return Delta & Derivative Hooks | Non-linear curve logic, async swaps, derivatives       | `/hooks/return_delta_hook/`       |
+| Week 6+   | Periphery Hooks & Bridging      | Multi-chain liquidity and routing logic                | `/hooks/swap_bridge_hook/`        |
+| Capstone  | Custom Hook Project             | End-to-end design, build, deploy, and present          | `/hooks/capstone_project/`        |
 
-### Deploy
+---
 
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
+## ⚙️ Tech Stack
 
-### Cast
+- **Solidity** (Uniswap v4 Core + Hooks)
+- **Foundry** (Forge + Anvil for testing and simulation)
+- **Hardhat / TypeScript** (scripts and deployments)
+- **Docker + GitHub Actions** (CI/CD setup)
+- *(Optional)* **Rust / Stylus / WASM** for experimental hook logic
 
-```shell
-$ cast <subcommand>
-```
+---
 
-### Help
+## 🧩 Key Projects
 
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+### 🧮 Volatility Fee Hook
+> Dynamically adjusts swap fees based on short-term volatility — discouraging toxic order flow while rewarding stable LPs.  
+📁 [`/hooks/volatility_fee_hook/`](./hooks/volatility_fee_hook)
+
+### ⚖️ Liquidity Rebalancer Hook
+> Automates LP position adjustments when price ranges drift — maintaining optimal utilization and passive income.  
+📁 [`/hooks/liquidity_rebalancer_hook/`](./hooks/liquidity_rebalancer_hook)
+
+### 🚀 Capstone Project — *[XXX]*
+> My final project for the incubator, presented at Demo Day.  
+> **Goal:** [XXX]  
+📁 [`/hooks/capstone_project/`](./hooks/capstone_project)
+
+---
+
+## 📚 Learning Outcomes
+
+- Deep understanding of **Uniswap v4 architecture**, including transient storage and the singleton pool manager.  
+- Practical experience designing **on-chain market mechanisms** with dynamic, composable hooks.  
+- Robust development and testing workflow with **Foundry**.  
+- Exposure to **MEV-resistant**, **oracle-aware**, and **gas-optimized** design patterns.  
+- Completion of a **capstone hook** deployed and presented during Demo Day.
+
+---
+
+## 🧾 License
+
+This repository is released under the [MIT License](LICENSE).  
+Use and reference freely with attribution.
+
+---
+
+## 🔗 References
+
+- [Atrium Academy – Uniswap Hook Incubator](https://atrium.academy/uniswap)
+- [Uniswap v4 Core Docs](https://docs.uniswap.org/contracts/v4/overview)
+- [Zuhaib’s Technical Introduction to Hooks](https://zuhaibmd.medium.com/uniswap-hook-incubator-technical-introduction-1-70c1b07d5814)
+- [Uniswap Blog: Announcing v4](https://blog.uniswap.org/uniswap-v4)
+- [Foundry Book](https://book.getfoundry.sh/)
