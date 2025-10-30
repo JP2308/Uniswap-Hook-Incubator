@@ -19,10 +19,12 @@ This repo serves as both a **technical archive** and **project portfolio**, mapp
 
 ## 🧠 Repository Structure
 
-| Weeks 3–4 | Dynamic Fees                    | Volatility-based and adaptive fee models               | 
-| Week 5    | Return Delta & Derivative Hooks | Non-linear curve logic, async swaps, derivatives       | 
-| Week 6+   | Periphery Hooks & Bridging      | Multi-chain liquidity and routing logic                | 
-| Capstone  | Custom Hook Project             | End-to-end design, build, deploy, and present          | 
+| Week       | Topic                         | Description                                           |
+|:-----------:|:------------------------------|:------------------------------------------------------|
+| Weeks 3–4   | Dynamic Fees                   | Volatility-based and adaptive fee models              |
+| Week 5      | Return Delta & Derivative Hooks | Non-linear curve logic, async swaps, derivatives      |
+| Week 6+     | Periphery Hooks & Bridging      | Multi-chain liquidity and routing logic               |
+| Capstone    | Custom Hook Project             | End-to-end design, build, deploy, and present         |
 
 ---
 
