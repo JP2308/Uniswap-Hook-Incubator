@@ -5,7 +5,7 @@
 [![Solidity](https://img.shields.io/badge/Solidity-%5E0.8.25-lightgrey)](https://soliditylang.org/)
 [![Atrium Academy](https://img.shields.io/badge/Atrium-Academy-6E56CF)](https://atrium.academy/uniswap)
 
-This repository contains all of my research, experiments, and projects from **The Atrium Academy’s Uniswap v4 Hook Incubator** — a deep technical program focused on mastering Uniswap v4 Core and building advanced **Hooks** in Solidity.
+This repository contains all of my research, experiments, and projects from **The Atrium Academy’s Uniswap v4 Hook Incubator** — a deep technical program focused on mastering Uniswap v4 Core and building advanced Hooks in Solidity.
 
 ---
 
@@ -19,28 +19,10 @@ This repo serves as both a **technical archive** and **project portfolio**, mapp
 
 ## 🧠 Repository Structure
 
-`/research/` → Notes, curriculum reflections, mechanism design drafts
-
-`/hooks/` → Hook implementations (Solidity + optional Rust/Stylus)
-
-`/tests/` → Foundry test suites, simulations, fuzzing
-
-`/deploy/` → Deployment scripts and configuration (Hardhat/Foundry)
-
-`/docs/` → Technical writeups, diagrams, and project documentation
-
----
-
-## 🎓 Curriculum Mapping
-
-| Week      | Topic                           | Description                                            | My Work                           |
-| --------- | ------------------------------- | ------------------------------------------------------ | --------------------------------- |
-| Week 1    | Introduction to Uniswap v4      | Architecture, singleton pool manager, what hooks solve | `/research/week1_introduction.md` |
-| Week 2    | Liquidity Operators             | LP automation, order-book logic, pool rebalancing      | `/hooks/liquidity_operator_hook/` |
-| Weeks 3–4 | Dynamic Fees                    | Volatility-based and adaptive fee models               | `/hooks/volatility_fee_hook/`     |
-| Week 5    | Return Delta & Derivative Hooks | Non-linear curve logic, async swaps, derivatives       | `/hooks/return_delta_hook/`       |
-| Week 6+   | Periphery Hooks & Bridging      | Multi-chain liquidity and routing logic                | `/hooks/swap_bridge_hook/`        |
-| Capstone  | Custom Hook Project             | End-to-end design, build, deploy, and present          | `/hooks/capstone_project/`        |
+| Weeks 3–4 | Dynamic Fees                    | Volatility-based and adaptive fee models               | 
+| Week 5    | Return Delta & Derivative Hooks | Non-linear curve logic, async swaps, derivatives       | 
+| Week 6+   | Periphery Hooks & Bridging      | Multi-chain liquidity and routing logic                | 
+| Capstone  | Custom Hook Project             | End-to-end design, build, deploy, and present          | 
 
 ---
 
@@ -50,7 +32,6 @@ This repo serves as both a **technical archive** and **project portfolio**, mapp
 - **Foundry** (Forge + Anvil for testing and simulation)
 - **Hardhat / TypeScript** (scripts and deployments)
 - **Docker + GitHub Actions** (CI/CD setup)
-- *(Optional)* **Rust / Stylus / WASM** for experimental hook logic
 
 ---
 
